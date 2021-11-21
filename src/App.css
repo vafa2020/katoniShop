@@ -1,0 +1,30 @@
+body {
+  background-color: #f6f6f6;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.link {
+  @apply block px-4 py-2 rounded text-gray-800 hover:bg-white hover:text-pink-700 font-bold;
+}
+.activated {
+  @apply bg-purple-500 text-white;
+}
+.badge {
+  @apply flex justify-center items-center absolute w-5 h-5 text-pink-500 bg-white rounded-full -top-3 -right-3 text-xs font-bold;
+}
+
+.button {
+  @apply w-full bg-pink-800 text-yellow-400 cursor-pointer rounded mt-2 py-2
+  disabled:opacity-50 disabled:cursor-not-allowed disabled:bg-gray-500;
+}
+.input {
+  @apply w-full my-2 border-2 rounded focus:outline-none focus:ring-2 focus:ring-purple-600;
+}
+.control {
+  @apply cursor-pointer p-1 rounded bg-pink-800 text-yellow-300;
+}
+.textError {
+  @apply w-96 bg-red-600 rounded text-center text-white font-bold p-4 text-lg;
+}
